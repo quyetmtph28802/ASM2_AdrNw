@@ -1,0 +1,50 @@
+<!-- res/layout/add_book.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/txtDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Sách"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#0036FF"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDangKy"
+        android:hint="Tên sách" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBookName"
+        android:layout_marginTop="16dp"
+        android:hint="Nhập giá" />
+
+    <EditText
+        android:id="@+id/editTextBookImageLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrice"
+        android:layout_marginTop="16dp"
+        android:hint="Link ảnh" />
+
+    <Button
+        android:id="@+id/buttonAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBookImageLink"
+        android:layout_marginTop="16dp"
+        android:text="Thêm sách"
+        android:onClick="onAddBookClick" />
+
+</RelativeLayout>

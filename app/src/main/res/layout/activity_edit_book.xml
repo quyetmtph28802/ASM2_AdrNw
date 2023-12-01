@@ -1,0 +1,50 @@
+<!-- activity_edit_book.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".EditBookActivity">
+    <TextView
+        android:id="@+id/txtDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa Sách"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#0036FF"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDangKy"
+        android:hint="Tên sách"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá sách"
+        android:layout_below="@id/editTextBookName"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextBookImageLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Linh"
+        android:layout_below="@id/editTextPrice"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonUpdateBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/editTextBookImageLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<!-- res/layout/activity_signup.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="40dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#0036FF"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/signupEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDangKy"
+        android:layout_marginTop="16dp"
+        android:inputType="textEmailAddress"
+        android:hint="Tên đăng ký" />
+
+    <EditText
+        android:id="@+id/signupPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupEmailEditText"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupPasswordEditText"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Đăng ký" />
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Đăng nhập" />
+    </LinearLayout>
+
+
+</RelativeLayout>
